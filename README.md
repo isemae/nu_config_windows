@@ -8,4 +8,6 @@ git clone https://github.com/isemae/nu_config_windows.git
 
 mv ./nu_config_windows/config.nu ~\AppData\Roaming\nushell\config.nu
 
+rm -rf ./nu_config_windows/
+
 ```
