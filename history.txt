@@ -278,3 +278,29 @@ git init
 git status
 git remote add origin https://github.com/isemae/nu_config_windows.git
 git status
+git add .
+git status
+git commit -m "update git"
+git push --set-upstream origin 
+git push --set-upstream origin main
+git pull origin main
+git status
+git push --set-upstream origin main
+git push
+git push --set-upstream origin master
+git branch
+git branch main
+git checkout main
+git push --set-upstream origin main
+git pull
+git pull origin main
+git push --set-upstream origin main
+git log --graph --all
+git push --set-upstream origin main
+git push
+git pull origin main
+git push --set-upstream origin main
+git pull origin main --allow-unrelated-histories
+git status
+git push --set-upstream origin main
+git pull origin main --allow-unrelated-histories
