@@ -1,0 +1,280 @@
+ls
+cd Desktop\
+ls
+$nu.env-path
+nvim 
+cd C:\Users\SSAFY\AppData\Roaming\nushell\env.nu
+cd C:\Users\SSAFY\AppData\Roaming\nushell\
+la
+ls
+git status
+cd deksktop
+cd Desktop\
+git clon https://github.com/isemae/todays_mission.git
+git clone https://github.com/isemae/todays_mission.git
+git clone https://github.com/isemae/todays_mission.git .
+cd
+git clone https://github.com/isemae/todays_mission.git
+git clone https://github.com/isemae/todays_mission.git .
+git clone https://github.com/isemae/todays_mission.git 
+cd desktop
+mkdir arikarithm
+cd arikarithm
+git clon https://github.com/isemae/algoSsafy.git .
+git clone https://github.com/isemae/algoSsafy.git .
+ls
+cd ..
+cd C:\SSAFY
+ls
+cd SSAFY_APS\
+git status
+open .
+start .
+git pull https://github.com/isemae/SSAFY_APS.git
+git pull origin master
+git remote
+git remote -v
+git remote remove origin
+git remote add origin https://github.com/isemae/SSAFY_APS.git
+git pull
+git pull origin master
+git remote -v
+cd ..
+git clone https://github.com/isemae/SSAFY_APS.git
+$wezterm.env-path
+cd
+start .
+wezterm start cmd
+cd
+cd 
+touch .wezterm.lua
+cd C:\Users\SSAFY\AppData\Roaming\nushell\
+ls
+which nu
+code .
+nvim
+$nu.env-path
+cd C:\Users\SSAFY\AppData\Roaming\nushell\
+nvim
+ls
+touch readme.md
+rm readme.md
+git clone https://github.com/isemae/nu_config_windows.git
+mv ./nu_config_windows/config.nu ~\AppData\Roaming\nushell\config.nu
+cd desktop
+rm -r ./nu_config_windows
+python __init__.py
+cd
+cd SSAFY
+cd C:\SSAFY
+nvim
+python __init__.py
+git pluu
+git pull
+vi
+nvim
+git status
+git add day05_0805월\src\SWEA_8931_제로\
+git add day05_0805월\src\Stack1\
+git add day05_0805월\src\SWEA_1218_괄호짝짓기\
+git commit -m "update APS_Day05, SWEA_8931, 1218"
+git remote -v
+git push
+nvim
+ls
+rm fibonacci.java
+cd C:\SSAFY
+ls
+cd SSAFY_APS\
+git status
+git stash
+git pull
+git stash
+git pull
+start .
+git fetch --all
+NVIM
+python __init__.py
+cd ..
+python __init__.py
+git status
+git pull
+git stash
+git pull
+vi
+nvim
+start .
+git pull
+git status
+git diff
+git add day06_0806화\
+git status
+git commit -m "update APS_Day06 SWEA_1222, 1224"
+git push
+git status
+git add .
+git reset
+git status
+git add day06_0806화\
+git status
+git commit -m "update SWEA_1218, _5432"
+git push
+cd ..
+cd SSAFY\
+ls
+nvim
+python __init__.py
+start .
+git status
+cd SSAFY_APS\
+git status
+git add day07_0807수\
+git status
+git commit -m "update day07_0807wed, SWEA_1225, 3499"
+git push
+nvim
+cd ..
+python __init__.py
+nvim
+python __init__.py
+git status
+git add day08_0808목\
+git commit -m "update day07_0807thu, SWEA_1859"
+git status
+git add day08_0808목\
+git commit -m "update SWEA_1966"
+git status
+git add .
+git commit -m "update SWEA_2805"
+git push
+git pull
+git push
+z aps
+git pull
+git status
+git add .
+git commit -m "update SWEA_1216, 1859"
+git push
+cd ..
+nvim
+python __init__.py
+nvim
+python __init__.py
+cd SSAFY_APS\
+git status
+git add .
+git commit -m "update aps_day09"
+start .
+git status
+git add .
+git commit -m "update algo_contest"
+git push
+git status
+git add .
+git commit -m "fix algo_contest"
+git push
+git status
+git pull
+cd ..
+nvim
+python __init__.py
+nvim
+python __init__.py
+nvim
+python __init__.py
+nvim
+python __init__.py
+cd SSAFY_APS\
+git status
+git add .
+git status
+git add .
+git commit -m "update aps_day10"
+git push
+nvim
+ls
+rm 연결리스트.md
+git status
+git add .
+git commit -m "update SWEA_1228"
+git status
+git add .
+git commit -m "update SWEA_1230"
+git push
+git clone https://github.com/isemae/arikarithm.git
+nvim
+cd ..
+python __init__.py
+cd SSAFY_APS\
+cd day11_0814수\
+git status
+cd ..
+git status
+git add .
+git commit -m "update 0814 wed, SWEA_1231"
+git status
+git commit -m "FQ"
+git push
+git status
+git add .
+git commit -m "fq<\n>"
+git push
+git log
+git status
+git push
+git pull
+git push
+scoop install yazi
+zoxide init nushell | save -f ~/.zoxide.nu
+source ~/.zoxide.nu
+z 
+z aps
+cd ..\..\SSAFY\SSAFY_APS\
+cd
+z aps
+yy
+fzf
+vi
+nvim
+yy
+cd AppData\
+ls
+yy
+start .
+scoop install 7zip jq poppler fd ripgrep fzf zoxide imagemagick
+yy
+z aps
+zoxide init nushell | save -f ~/.zoxide.nu
+source ~/.zoxide.nu
+yy
+z aps
+yy
+z nushell
+z
+z aps
+$nu.config-path
+nvim
+z
+z aps
+yy
+cd
+cd Desktop\
+ls
+cd arikarithm\
+ls
+cd
+z arika
+cd
+cd ..\..\Test\
+ls
+cd
+z test
+yy
+z roaming
+yy
+start .
+git status
+git init
+git status
+git remote add origin https://github.com/isemae/nu_config_windows.git
+git status
