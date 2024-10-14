@@ -3,6 +3,7 @@
 # version = "0.96.1"
 
 def create_left_prompt [] {
+  use std
     let dir = match (do --ignore-shell-errors { $env.PWD | path relative-to $nu.home-path }) {
         null => $env.PWD
         '' => '~'
@@ -12,8 +13,28 @@ def create_left_prompt [] {
     let path_color = (if (is-admin) { ansi red_bold } else { ansi green_bold })
     let separator_color = (if (is-admin) { ansi light_red_bold } else { ansi light_green_bold })
     let path_segment = $"($path_color)($dir)"
+    let formatted_path_segment = $path_segment | str replace --all (char path_sep) $"($separator_color)(char path_sep)($path_color)"
 
-    $path_segment | str replace --all (char path_sep) $"($separator_color)(char path_sep)($path_color)"
+    # Try to check if the current directory is inside a git repository
+    let is_git_repo = try {
+        git rev-parse --is-inside-work-tree e> (std null-device) | str trim
+    } catch {
+        "false"
+    }
+
+    let git_segment = if ($is_git_repo == "true") {
+        let git_current_ref = $"(git rev-parse --abbrev-ref HEAD e> (std null-device))"
+        if ($git_current_ref != "") {
+            $"(ansi reset) | (ansi yellow)($git_current_ref)" 
+        } else {
+            ""
+        }
+    } else {
+        ""
+    }
+
+    let prompt = $"($formatted_path_segment)($git_segment)"
+    $prompt
 }
 
 def create_right_prompt [] {
@@ -35,7 +56,9 @@ def create_right_prompt [] {
 }
 
 # Use nushell functions to define your right and left prompt
-$env.PROMPT_COMMAND = {|| create_left_prompt }
+$env.PROMPT_COMMAND = {|| create_left_prompt 
+
+}
 # FIXME: This default is not implemented in rust code as of 2023-09-08.
 $env.PROMPT_COMMAND_RIGHT = {|| create_right_prompt }
 
@@ -99,13 +122,3 @@ $env.NU_PLUGIN_DIRS = [
 
 # To load from a custom file you can use:
 # source ($nu.default-config-dir | path join 'custom.nu')
-
-def --env yy [...args] {
-	let tmp = (mktemp -t "yazi-cwd.XXXXXX")
-	yazi ...$args --cwd-file $tmp
-	let cwd = (open $tmp)
-	if $cwd != "" and $cwd != $env.PWD {
-		cd $cwd
-	}
-	rm -fp $tmp
-}
