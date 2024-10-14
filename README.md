@@ -14,3 +14,11 @@ Move-Item -Path ./nu_config_windows/env.nu -Destination "$env:AppData/nushell/en
 Remove-Item -Path ./nu_config_windows -Recurse -force
 
 ```
+
+when update
+```
+git clone https://github.com/isemae/nu_config_windows.git
+mv ./nu_config_windows/env.nu ($env.AppData | path join "nushell/env.nu")
+
+.... lunch issue!
+```
