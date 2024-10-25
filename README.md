@@ -19,6 +19,6 @@ when update
 ```
 git clone https://github.com/isemae/nu_config_windows.git
 mv ./nu_config_windows/env.nu ($env.AppData | path join "nushell/env.nu")
+rm -r ./nu_config_windows/  
 
-.... lunch issue!
 ```
