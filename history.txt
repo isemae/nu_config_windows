@@ -304,3 +304,6 @@ git pull origin main --allow-unrelated-histories
 git status
 git push --set-upstream origin main
 git pull origin main --allow-unrelated-histories
+y
+nvim
+git status
