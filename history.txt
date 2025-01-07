@@ -307,3 +307,21 @@ git pull origin main --allow-unrelated-histories
 y
 nvim
 git status
+git add .
+git log
+git commit -m "update yazi config"
+git push
+z nushell
+nvim
+z
+source ~/.zoxide.nu
+z
+nvim
+z
+z down
+winget install -e --id GoLang.Go.1.20
+z nushell
+y
+fzf
+cd AppData\Roaming\nushell\
+git status
